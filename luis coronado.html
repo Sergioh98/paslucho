@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Master Coach Financiero- [Nombre del Coach]</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts para un tipo de letra más grueso y estilo financiero (usando Montserrat Bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #121212; /* Fondo oscuro */
+            color: #e0e0e0; /* Texto claro */
+            font-family: 'Montserrat', sans-serif; /* Tipo de letra grueso y moderno financiero */
+            font-weight: 700; /* Grosor bold para todo el texto */
+        }
+        .navbar {
+            background-color: #1e1e1e;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffd700 !important; /* Oro para premium */
+        }
+        .nav-link:hover {
+            color: #ffffff !important;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg'); /* Añade una imagen de fondo si tienes */
+            background-size: cover;
+            padding: 150px 0;
+            text-align: center;
+            background-image: url("img/pas\ 1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50px;
+        }
+        .hero h1 {
+            color: #efbb00;
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section h2 {
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: none;
+            color: #e0e0e0;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            background-color: #2c2c2c;
+            border: 1px solid #ffd700;
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .btn-primary {
+            background-color: #ffd700;
+            border: none;
+            color: #121212;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .btn-primary:hover {
+            background-color: #e6c200;
+        }
+        .footer {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Animaciones con jQuery */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Coach Financiero Cristiano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Bienvenido</h1>
+            <p>La persona en la que te estas convirtiendo va a sorprender a mucha gente.
+              <br>
+              DIOS esta obrando
+            </p>
+            <a href="#contacto" class="btn btn-primary btn-lg">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="section bg-dark fade-in">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/pas 3.jpg" alt="Foto del Coach" class="img-fluid rounded"> <!-- Reemplaza con tu imagen -->
+                </div>
+                <div class="col-md-6">
+                    <p>Soy LUIS CORONADO, un Master Coach Financiero certificado con más de 10 años de experiencia. Integro principios cristianos en mis enseñanzas para ayudar a las personas a lograr libertad financiera alineada con su fe.</p>
+                    <p>"Honra al Señor con tus riquezas y con los primeros frutos de tus cosechas." - Proverbios 3:9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section fade-in">
+        <div class="container">
+            <h2>Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Coaching Personal</h5>
+                            <p class="card-text">Sesiones uno a uno para manejar deudas, presupuestos y metas financieras con principios bíblicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Talleres Grupales</h5>
+                            <p class="card-text">Cursos en línea y presenciales sobre finanzas cristianas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Conferencias</h5>
+                            <p class="card-text">Charlas motivacionales en iglesias y eventos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos en Conferencias -->
+    <section id="galeria" class="section bg-dark fade-in">
+        <div class="container">
+            <h2>Galería de Conferencias</h2>
+            <div class="row gallery">
+                <div class="col-md-4">
+                    <img src="img/pas 4.jpg" alt="Conferencia 1"> <!-- Reemplaza con imágenes reales -->
+                </div>
+                <div class="col-md-4">
+                    <img src="img/pas 3.jpg" alt="Conferencia 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/pas 5.jpg" alt="Conferencia 3">
+                </div>
+                <!-- Añade más si es necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section fade-in">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>"Gracias al coaching, logré salir de deudas y dar con generosidad."</p>
+                            <footer class="blockquote-footer">Cliente 1</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>"Principios cristianos que cambiaron mi vida financiera."</p>
+                            <footer class="blockquote-footer">Cliente 2</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>"Recomiendo altamente este servicio."</p>
+                            <footer class="blockquote-footer">Cliente 3</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section bg-dark fade-in">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Coach Financiero Cristiano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script>
+        $(document).ready(function() {
+            // Fade-in en scroll
+            $(window).scroll(function() {
+                $('.fade-in').each(function() {
+                    var top = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+                    if (top < windowBottom) {
+                        $(this).addClass('visible');
+                    }
+                });
+            });
+
+            // Formulario funcional (simulado)
+            $('#contactForm').submit(function(e) {
+                e.preventDefault();
+                alert('Mensaje enviado con éxito! (Simulación)');
+                this.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
